@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<info id="101">
+		<szCompany>richman</szCompany>
+        <address>Beijing</address>
+        <years>5</years>
+	</info>
+	<info id="102">
+		<szCompany>inside</szCompany>
+        <address>Shanhai</address>
+        <years>100</years>
+	</info>
+</Sample>

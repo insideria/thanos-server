@@ -1,0 +1,13 @@
+node_modules/
+.git
+*.map
+*.js
+.vscode/*.sql
+typings/*
+logs/*
+package-lock.json
+.DS_Store
+*.log
+dist/*
+tools/autots/*
+_MACOSX/%

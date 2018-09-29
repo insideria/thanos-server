@@ -1,0 +1,25 @@
+package thanos;
+
+enum MsgID
+{
+	id_LoginReq = 1;
+    id_LoginAck = 2;
+}
+
+message Login
+{
+	optional MsgID msgid = 1 [default = id_LoginReq];
+	required bytes username = 2;
+    required bytes password = 3;
+}
+
+enum LoginResultEnum {
+    Success = 0;
+    Failed = 1;
+}
+
+message LoginResult
+{
+	optional MsgID msgid = 1 [default = id_LoginAck];
+	required LoginResultEnum result = 2 [default = Success];
+}

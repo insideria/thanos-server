@@ -1,0 +1,18 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "target": "es2016",    /*指定ECMAScript目标版本*/
+        "module": "commonjs",  /*指定生成哪个模块系统代码*/
+        "sourceMap": true,     /*生成相应的 .map文件*/
+        "strict": false,        /*以严格模式解析并为每个源文件生成 "use strict"语句*/
+        "outDir": "dist/"      /*重定向输出目录*/
+    },
+    "include": [			   /*指定一个文件全局匹配模式列表*/
+        "tools/*",
+        "tools/*/*",
+        "main.ts",
+        "src/*",
+        "src/*/*",
+        "src/*/*/*",
+    ]
+}

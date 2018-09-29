@@ -1,0 +1,1 @@
+export const ConstMaxMsgLen = 1024 * 1024;
