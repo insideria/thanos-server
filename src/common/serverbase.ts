@@ -51,7 +51,8 @@ abstract class ServerBase {
             });
                         
             this._server.listen(this._port, this._host, cb);
-            myLogger.log('server is starting...')
+            myLogger.log(`server listen: {host: ${this._host}, port: ${this._port}}`)
+            myLogger.log(`server is running... `);
         }
     }
 

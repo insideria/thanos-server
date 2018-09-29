@@ -34,6 +34,7 @@ export class HOKServer extends ServerBase {
         }
 
         if (serverConfig.protobuf && serverConfig.protobuf.use) {
+            myLogger.log("config file open status to use protobuf manager module.");
             this._usePB = true;
             await ProtoManager.getInstance().initialize(serverConfig.protobuf.proto);
             await ProtoManager.getInstance().handlerRequests(serverConfig.protobuf.handler);

@@ -40,18 +40,16 @@ export class ProtoManager {
         for (const root of roots) {
            this.onLoadFile(await root, protoFiles[fileId++]);
         }
-        myLogger.trace(`ProtoManager :`, ...this._mapRequestMessage.keys());
         myLogger.log('protobuf files initialize finished ...', protoFiles);
     }
 
     async handlerRequests(handlerFiles: Array<string>) {
-        let protocols = await handlerFiles.map(async className =>{
+        await handlerFiles.map(async className =>{
             let xProtocol = `./proto/${className.toLowerCase()}`;
             let protoRequests = await import(xProtocol);
             await ProtoManager.getInstance().suckRequestFuncion(protoRequests[className]);
             return xProtocol;
         });
-        myLogger.log(protocols);
     }
 
     private suckRequestFuncion<T>(c : {new(): T}): void {
