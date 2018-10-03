@@ -11,3 +11,4 @@ package-lock.json
 dist/*
 tools/autots/*
 _MACOSX/%
+src/module/hokprotobuf.d.ts

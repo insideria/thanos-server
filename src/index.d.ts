@@ -1,4 +1,4 @@
-// / <reference path="./module/hokprotobuf.d.ts" />
+/// <reference path="./module/hokprotobuf.d.ts" />
 declare module 'pmx';
 
 interface ServerConfig {

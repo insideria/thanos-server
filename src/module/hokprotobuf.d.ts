@@ -1,5 +1,4 @@
 import * as $protobuf from "protobufjs";
-
 /** Namespace thanos. */
 export namespace thanos {
 
